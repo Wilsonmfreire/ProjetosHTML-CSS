@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formularioDeContato.css">
+    <!--adicionando fontawesome ao projeto-->
+    <script src="https://kit.fontawesome.com/e01fb1b5c2.js" crossorigin="anonymous"></script>
+    <title>Form Contatos</title>
+</head>
+<body>
+    <form action="">
+        <h3>Entrar em contato</h3>
+        <label id="email"><i class="fas fa-envelope-square"></i></label>
+        <input type="text"  name="email" placeholder="Seu-email...">
+        <label id="password"><i class="fas fa-lock"></i></label>
+        <input type="password" name="password" placeholder="Sua senha...">
+        <input type="submit" name="acao" value="enviar">
+    </form>
+
+    <script>
+        /*trabalhando com os eventos*/
+        var email = document.getElementById('email');
+        var password = document.getElementById('password');
+
+        email.addEventListener('focus',()=>{
+            email.style.borderColor = "#4a5f6a";
+        });
+        email.addEventListener('blur',()=>{
+            email.style.borderColor = "#ccc";
+        });
+        password.addEventListener('focus',()=>{
+            password.style.borderColor = "#4a5f6a";
+        });
+        password.addEventListener('blur',()=>{
+            password.style.borderColor = "#ccc";
+        });
+    </script>
+</body>
+</html>
