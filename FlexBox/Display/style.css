@@ -1,0 +1,39 @@
+/*Flex, cada elemento ao lado*/
+.flex {
+    display: flex;
+}
+
+/*quebrando linha quando precisar*/
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+/*ocupando todo espaco do container respeitando margin*/
+.flex-item-1{
+    flex:1;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+
+h1 { 
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 400%;
+    margin:0 auto;
+    border:1px solid #ccc
+}
+
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
